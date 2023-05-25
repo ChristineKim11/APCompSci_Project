@@ -46,6 +46,10 @@ function getWpm() {
   return correctWords.length / gameTime * 60000;
 }
 
+function getErrors() {
+  
+}
+
 function gameOver() {
   clearInterval(window.timer);
   addClass(document.getElementById('game'), 'over');
