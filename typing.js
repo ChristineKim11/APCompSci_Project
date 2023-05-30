@@ -26,6 +26,9 @@ function newGame() {
   for (let i = 0; i < 200; i++) {
     document.getElementById('words').innerHTML += formatWord(randomWord());
   }
+  document.getElementById('cursor').innerHTML = '';  
+  removeClass(document.getElementById('game'), 'over');
+
   addClass(document.querySelector('.word'), 'current');
   addClass(document.querySelector('.letter'), 'current');
   document.getElementById('info').innerHTML = (gameTime / 1000) + '';
@@ -159,7 +162,7 @@ document.getElementById('game').addEventListener('keyup', ev => {
   cursor.style.left = (nextLetter || nextWord).getBoundingClientRect()[nextLetter ? 'left' : 'right'] + 'px';
 });
 
-document.getElementById('newGameBtn').addEventListener('click', () => {
+document.getElementById('newGameBtn').addEventListener('click', () =>{
   gameOver();
   newGame();
 });
