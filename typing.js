@@ -39,7 +39,7 @@ function newGame() {
   removeClass(document.getElementById('game'), 'over'); 
   const gameTime = 10 * 1000;
   window.timer = null;
-  window.gameStart = null;
+  window.gameStart= null; 
   const nextLetter = document.querySelector('.letter.current');
   addClass(document.querySelector('.word'), 'current');
   addClass(document.querySelector('.letter'), 'current');
