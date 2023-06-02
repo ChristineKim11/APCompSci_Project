@@ -2,7 +2,7 @@ const words = 'there is no one like you there has never been anyone like you'.sp
 const btnIncrement = document.querySelector('#increment');
 const mainTitle= document.querySelector('#title');
 const wordsCount = words.length;
-const gameTime = 30 * 1000;
+const gameTime = 10 * 1000;
 const mistakeTag = document.querySelector(".mistake span")
 window.timer = null;
 window.gameStart = null;
@@ -37,10 +37,9 @@ function newGame() {
   }
   document.getElementById('cursor').innerHTML = '';  
   removeClass(document.getElementById('game'), 'over'); 
-  const gameTime = 30 * 1000;
+  const gameTime = 10 * 1000;
   window.timer = null;
   window.gameStart = null;
-  window.pauseTime = 0;
   const nextLetter = document.querySelector('.letter.current');
   addClass(document.querySelector('.word'), 'current');
   addClass(document.querySelector('.letter'), 'current');
