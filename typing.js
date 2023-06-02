@@ -9,7 +9,7 @@ window.gameStart = null;
 window.pauseTime = 0;
 let curValue = 0;
 
-btnIncrement.addEventListener('click', () => {
+btnIncrement.addEventListener('mouseout', () => {
   curValue++;
   mainTitle.textContent = curValue;
 });
