@@ -89,14 +89,14 @@ div.word{
     }
 }
 #cursor{
-    display:block;
+    display:none;
     width: 2px;
     height: 1.6rem;
     background: var(--primaryColor);
-    position: fixed;
+    position: absolute;
     top: 198px;
-    left: 344px;
-    animation: blink .00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005s infinite;
+    left: 18px;
+    animation: blink .3s infinite;
 }
 #game:focus #cursor{
     display: block;
